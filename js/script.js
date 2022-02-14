@@ -2,12 +2,24 @@
 
 let firstNumber = Number(prompt('Введите первое число:'));
 let secondNumber = Number(prompt('Введите второе число:'));
-let plusResult = firstNumber + secondNumber;
-let minusResult = firstNumber - secondNumber;
-let multiplyResult = firstNumber * secondNumber;
-let divResult = firstNumber / secondNumber;
 
-console.log(`Результат: ${firstNumber}+${secondNumber}=${plusResult}`);
-console.log(`Результат: ${firstNumber}-${secondNumber}=${minusResult}`);
-console.log(`Результат: ${firstNumber}*${secondNumber}=${multiplyResult}`);
-console.log(`Результат: ${firstNumber}/${secondNumber}=${divResult}`);
+function addNumber (addNumber = firstNumber + secondNumber) {
+    console.log(`Результат: ${firstNumber}+${secondNumber}=${addNumber}`);
+}
+
+function subNumber (subNumber = firstNumber - secondNumber) {
+    console.log(`Результат: ${firstNumber}-${secondNumber}=${subNumber}`);
+}
+
+function multNumber (multNumber = firstNumber * secondNumber) {
+    console.log(`Результат: ${firstNumber}*${secondNumber}=${multNumber}`);
+}
+
+function devNumber (devNumber = firstNumber / secondNumber) {
+    console.log(`Результат: ${firstNumber}/${secondNumber}=${devNumber}`);
+}
+
+addNumber();
+subNumber();
+multNumber();
+devNumber();
