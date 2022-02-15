@@ -1,21 +1,25 @@
 'use strict';
 
-let firstNumber = Number(prompt('Введите первое число:'));
-let secondNumber = Number(prompt('Введите второе число:'));
+const firstNumber = Number(prompt('Введите первое число:'));
+const secondNumber = Number(prompt('Введите второе число:'));
 
-function addNumber (addNumber = firstNumber + secondNumber) {
+function addNumber () {
+    const addNumber = firstNumber + secondNumber;
     console.log(`Результат: ${firstNumber}+${secondNumber}=${addNumber}`);
 }
 
-function subNumber (subNumber = firstNumber - secondNumber) {
+function subNumber () {
+    const subNumber = firstNumber - secondNumber;
     console.log(`Результат: ${firstNumber}-${secondNumber}=${subNumber}`);
 }
 
-function multNumber (multNumber = firstNumber * secondNumber) {
+function multNumber () {
+    const multNumber = firstNumber * secondNumber;
     console.log(`Результат: ${firstNumber}*${secondNumber}=${multNumber}`);
 }
 
-function devNumber (devNumber = firstNumber / secondNumber) {
+function devNumber () {
+    const devNumber = firstNumber / secondNumber;
     console.log(`Результат: ${firstNumber}/${secondNumber}=${devNumber}`);
 }
 
